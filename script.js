@@ -1,14 +1,5 @@
-const panels = document.querySelectorAll('.panel')
-
-panels.forEach((panel) => {
-  panel.addEventListener('click', () => {
-    removeActivePanels()
-    panel.classList.toggle('active')
-  })
+const rotate = document.getElementById('rotate')
+const container = document.querySelector('.container')
+rotate.addEventListener('click', () => {
+  container.classList.add('show-nav')
 })
-
-function removeActivePanels() {
-  panels.forEach((panel) => {
-    panel.classList.remove('active')
-  })
-}

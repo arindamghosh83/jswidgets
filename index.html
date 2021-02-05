@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expanding Cards</title>
+    <title>Rotating Navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <div class="container">
-        <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1612017649203-0c1b150c9659?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fDZzTVZqVExTa2VRfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');">
-            <h3>Calm Sea</h3>
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button id='rotate'>Rotate</button>
+            </div>
+            
         </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1612358715408-3ecb2df90cc1?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');">
-            <h3>hfhfhfhfhffh</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1612347753788-20f339fd6f4b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');"><h3>hfhfhfhf</h3></div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1612351196882-92c0efdeb03d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');"><h3>Wild Forest</h3></div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1612256360584-f31516c8e63a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');">
-            <h3>Explore the World</h3>
+        <div class="content">
+            <h1>Amazing Article</h1>
+            <small>Floren Pop</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus, ducimus rem magnam pariatur, fugiat veniam deleniti voluptates autem aspernatur quaerat optio consequuntur velit libero, repellendus quo voluptatum. Facilis aspernatur sit accusamus id tempore, quaerat numquam eligendi recusandae cupiditate quo incidunt iure quod architecto tempora quas ipsum voluptatum, tenetur doloribus deleniti in rem earum dignissimos! Illum quos ipsa necessitatibus dolorum repudiandae voluptatibus, atque veniam corporis a inventore! Neque magnam doloribus ipsa perspiciatis modi doloremque consequatur, debitis excepturi qui ratione obcaecati necessitatibus quis minima facilis natus delectus soluta dolorem pariatur itaque sit quo error veniam nam exercitationem? Odio nesciunt debitis magnam.</p>
+            <h3>My Dog</h3>
+            <img src="https://images.unsplash.com/photo-1612256360584-f31516c8e63a?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8SnBnNktpZGwtSGt8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="dog">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, corrupti odit optio et temporibus labore non, rem voluptas, ipsam dolorum pariatur magni. Facere inventore quasi aut nisi velit deserunt vitae aliquid, accusamus laudantium exercitationem numquam. Optio accusantium et vero. Repellendus ea dignissimos atque! Soluta odit facere voluptates similique odio, labore suscipit explicabo illum ipsa doloribus nisi consequuntur cum officia asperiores ab ipsam nulla voluptatem quia. Accusamus vitae nihil debitis doloremque accusantium dolorem saepe non esse?</p>
         </div>
     </div>
+    <nav>
+        <ul>
+            <li><i class="fas fas-home">Home</i></li>
+            <li><i class="fas fas-user-alt">About</i></li>
+            <li><i class="fas fas-envelope">Contact</i></li>
+        </ul>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
